@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  brouter:
+    build: .
+    volumes:
+      - "./misc/scripts/segments4:/segments4"
+    restart: unless-stopped
+    ports:
+      - 17777:17777
